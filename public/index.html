@@ -13,9 +13,49 @@
     </div>
 
     <div class="container">
-        <h2>图片库</h2>
-        <div class="gallery" id="gallery">
-            <!-- 图片将通过 JavaScript 动态加载 -->
+        <!-- 上传表单 -->
+        <div class="upload-section">
+            <h2>📤 上传图片</h2>
+            <form id="uploadForm" class="upload-form">
+                <div class="form-group">
+                    <label for="fileInput">选择图片文件：</label>
+                    <input type="file" id="fileInput" name="file" accept="image/*" required>
+                    <small>支持 JPG、PNG、GIF、WebP 格式，大小不超过 10MB</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="titleInput">图片标题：</label>
+                    <input type="text" id="titleInput" name="title" placeholder="输入图片标题" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="categorySelect">分类：</label>
+                    <select id="categorySelect" name="category">
+                        <option value="">-- 选择分类 --</option>
+                        <option value="Nature">自然风景</option>
+                        <option value="Portrait">人像摄影</option>
+                        <option value="Architecture">建筑</option>
+                        <option value="Food">美食</option>
+                        <option value="Other">其他</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tagsInput">标签（逗号分隔）：</label>
+                    <input type="text" id="tagsInput" name="tags" placeholder="例如：美景,旅游,风景">
+                </div>
+
+                <button type="submit" class="btn-primary">上传图片</button>
+            </form>
+            <div id="uploadMessage" class="message"></div>
+        </div>
+
+        <!-- 图片库 -->
+        <div class="gallery-section">
+            <h2>🖼️ 图片库</h2>
+            <div class="gallery" id="gallery">
+                <!-- 图片将动态加载到这里 -->
+            </div>
         </div>
     </div>
 
