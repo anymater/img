@@ -1,0 +1,21 @@
+{
+  "name": "img",
+  "version": "0.1.0",
+  "description": "一个现代化的图库管理系统",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/index.js",
+    "build": "npm run build",
+    "test": "jest",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "image",
+    "gallery",
+    "photo"
+  ],
+  "author": "anymater",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
